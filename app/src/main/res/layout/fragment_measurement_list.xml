@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#B8B8B8">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/item_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="30"
+                android:text="@string/id"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="25sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
+
+            <TextView
+                android:id="@+id/x3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/x"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="#787878" />
+
+            <TextView
+                android:id="@+id/x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="20"
+                android:text="@string/x"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <TextView
+                android:id="@+id/y3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="1"
+                android:text="@string/y"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="#787878" />
+
+            <TextView
+                android:id="@+id/y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="20"
+                android:text="@string/y"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#B8B8B8">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="15" />
+
+            <TextView
+                android:id="@+id/value2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_weight="1"
+                android:text="@string/value"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="#787878" />
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_marginStart="41dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:text="@string/value"
+                android:textAlignment="textEnd"
+                android:textAppearance="?attr/textAppearanceListItem" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15" />
+
+        <TextView
+            android:id="@+id/s1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="1"
+            android:text="@string/s1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#787878" />
+
+        <TextView
+            android:id="@+id/stiprumas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="2"
+            android:text="@string/s1"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/s2text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="1"
+            android:text="@string/s2"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#787878" />
+
+        <TextView
+            android:id="@+id/stiprumas2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="2"
+            android:text="@string/s2"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/s3text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="1"
+            android:text="@string/s3"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#787878" />
+
+        <TextView
+            android:id="@+id/stiprumas3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="2"
+            android:text="@string/s3"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </LinearLayout>
+
+</LinearLayout>

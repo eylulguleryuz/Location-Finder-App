@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.t120b192.fragments.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_measurementListFragment"
+            app:destination="@id/measurementListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.t120b192.fragments.UserListFragment"
+        android:label="@string/user_fragment_label"
+        tools:layout="@string/">
+        <action
+            android:id="@+id/action_userListFragment_to_highlightedMatrixFragment"
+            app:destination="@id/highlightedMatrixFragment" />
+        <action
+            android:id="@+id/action_userListFragment_to_editUser"
+            app:destination="@id/editUser">
+            <argument
+                android:name="mac"
+                app:argType="string" />
+            <argument
+                android:name="s1"
+                app:argType="integer" />
+            <argument
+                android:name="s2"
+                app:argType="integer" />
+            <argument
+                android:name="s3"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.example.t120b192.fragments.AddUserFragment"
+        android:label="@string/user_add_fragment_label"
+        tools:layout="@layout/fragment_add_user">
+        <action
+            android:id="@+id/action_addUserFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/highlightedMatrixFragment"
+        android:name="com.example.t120b192.fragments.HighlightedMatrixFragment"
+        android:label="@string/highlighted_fragment_label"
+        tools:layout="@layout/highlighted_matrix">
+        <action
+            android:id="@+id/action_highlightedMatrixFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUser"
+        android:name="com.example.t120b192.fragments.EditUser"
+        android:label="@string/user_edit_fragment_label"
+        tools:layout="@layout/fragment_edit_user">
+        <action
+            android:id="@+id/action_editUser_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/measurementListFragment"
+        android:name="com.example.t120b192.fragments.MeasurementListFragment"
+        android:label="@string/signal_fragment_label"
+        tools:layout="@layout/fragment_measurement_list_list" />
+</navigation>
