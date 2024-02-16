@@ -11,7 +11,7 @@ This project was built on Android Studio and targeted for Android 13.
 
 The app consists of 6 screens. 
 
-The first fragment is the main page where the user can see a grid of measurement points acquired from database tables. 
+On the main page, users can see a grid of measurement points acquired from database tables. 
 ```
 0 (red) - no measurements 
 1 (green) there are measurements
@@ -34,7 +34,7 @@ Once the button is pressed, the location grid shows up again and marks the locat
 The location of the user is calculated by the **nearest neighbor search method**.
 ```
 
-Fragments for adding a user(top) and signal list(bottom):
+Screens for adding a user and signal list:
 
 ![Screenshot 2024-02-15 215157](https://github.com/eylulguleryuz/Location-Finder-App/assets/20710032/f6ccb145-e3c8-454e-9017-d916a22abe1a)
 ![Screenshot 2024-02-15 215225](https://github.com/eylulguleryuz/Location-Finder-App/assets/20710032/0935a4e5-a7ca-4fe8-988a-eecbd65b4025)
